@@ -1,0 +1,118 @@
+/* ----------------------------------------------------------------------------Estilos Contacto ----------------------------------------------------------------------------------------------*/
+
+/* Estilos generales  */
+main {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+  }
+  
+  .contenedor-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para los cards */
+  .card {
+    flex: 1 0 30%; /* Ajustar el tamaño de los cards según el espacio disponible */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .contacto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contacto h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contacto button {
+    background-color: #2c3136;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contacto button:hover {
+    background-color: #96db14;
+  }
+  
+  
+  /* Estilos para el mapa */
+  .mapa h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para las redes sociales */
+  .redes-sociales h2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .redes-sociales ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes-sociales li {
+    margin-right: 10px;
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  /* Media queries para adaptar estilos a tablets y celulares */
+  @media (max-width: 768px) {
+    .contenedor-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      flex: 1 0 100%; /* Los cards ocuparán todo el ancho en pantallas pequeñas */
+    }
+  
+    .mapa iframe {
+      height: 200px; /* Ajustar el tamaño del mapa para pantallas más pequeñas */
+    }
+  }
+  
+  
