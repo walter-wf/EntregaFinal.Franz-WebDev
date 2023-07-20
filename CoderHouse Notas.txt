@@ -1,0 +1,73 @@
+Nesting o anidamiento. 
+Variables o mapas. ( para el final, @cada seccion, luego compilar en SASS )
+Partials con o sin carpetas. 
+Extend y/ o Mixing.
+Condicionales. 
+For y Each. 
+npm install -g sass
+sass --watch scss:css
+crear 
+implementar bootstrap u media quieres al proyecto
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 650px)
+/* Estilos para tablets */
+@media (min-width: 577px) and (max-width: 1023px) {
+
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 1024px) {
+
+
+----------------------Feedback 2enda entrga---------------------------------------------
+
+
+
+
+Que tal walter como estas?
+
+Gracias por tu entrega! estas haciendo un gran trabajo, hay que ajustar algunas cositas!
+
+Veo que en el home se te rompe la seccion de autor, fijate que es por que pusiste un margin left de 600px.
+En el index, casi todas las vinculaciones de imagenes, tiene un error en la sintaxis, las colocaste con "../"
+ y deberia ir con un solo punto, ya que estan en un carpeta que le sigue al index, que esta despues. Por eso va "./" y 
+ si esta en diferentes carpetas si iria "../"
+Veo que a lo largo del css has estado mezclando alguns propiedades de grid con flex, ojo con esto, por ej, en un container, 
+el de titulo, colocaste display flex, y le das un grid gap, acordate que solo se utilizan en el padre cuando tiene grid.
+Has utilizado mucho grid en elementos o container donde no lo necesitarias en realidad, 
+intenta resumirlo lo más posible, posicionando todo con flex.
+ Asi no tenes problemas de margenes o alineaciones, que con grid suele pasar.
+En el css y los html, has organizado y nombrado muy bien el codigo, te felicito por ello.
+Los mediaqueries recorda que van en lo posible como buena practica, a lo ultimo del css, por su lectura en cascada!
+Has hecho uso de boostrap, muy bien. No abusemos de sus herramientas. Hasta ahora veo que esta balanceado, deberias centrar algunos botones en las cards, y mejorar tamaños.
+Intenta en los htmls, cuando uses cards, o galeria de fotos, que tenga la misma cantidad de columnas y filas para que quede simetrico, te paso aca debajo una foto donde se ve como queda disparejo:
+
+
+
+
+
+
+Otro consejo que puedo darte, es sacar el formulario y el mapa del footer, haria un html solo dedicado al contacto, 
+sacaria alguno de los que tenes, y agregaria formulario, mapa y redes alli adentro! 
+Lo de github y git esta todo subido perfecto, faltaria hacer el github pages.
+Y lo ultimo que me queda comentar es que lo mobile no esta resuelto del todo walter, 
+las cards si se vuelven una columna, y esta bien, pero demas elementos rompen la pagina por el ancho, deberias utilizar medidas relativas en los containers, por el widht. 
+Utilizarlo al 100%. El nav por ej deberias hacerlo como menu hamburguesa. El footer reducirlo a lo más minimo. Y todo lo demas ajustarlo para que quede en una sola columna, maximo 2. 
+
+
+Ajusta todo esto, intenta reducir el css, reciclar codigo, si utilizas bootstrap, tenes mucjas clases en la documentation donde te puede resumir algunas propiedades en pocas lineas de codigo, 
+aprovechalo! Y segui así! a mejorar y reveer la clase de responsive! utilizar menos grid para no complicar tanto, más flex en elementos pequelños para posicionar, y ajustar tamaños a unidades relativas! 
+
+media query al final del codigo al general. 
+Saas, partial, anidar, 
+
+
+10 días para la entrega final cuidado
+Proyecto final
+Entrega de tu proyecto final
+Plazo de entrega del estudiante
+Desde el 25/07/2023 10:00 h
+Hasta el 04/08/2023 23:59 h
+
+
