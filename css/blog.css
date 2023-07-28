@@ -68,7 +68,7 @@ body {
   }
   
   /* Media queries para adaptar estilos a celulares y tablets */
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     .container {
       padding: 10px; /* Reducir el padding del contenedor para pantallas más pequeñas */
     }

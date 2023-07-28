@@ -1,0 +1,91 @@
+// Variables
+$primary-color: #ccc;
+$secondary-color: rgb(42, 62, 62);
+$border-radius: 10px;
+$border-width: 10px;
+$animation-duration: 1s;
+
+// Mixins
+@mixin aparecer {
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+    }
+  }
+  animation: aparecer #{$animation-duration} forwards;
+}
+
+// Estilos CSS
+.contenedor-libro {
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  border: $border-width solid $primary-color;
+  opacity: 0;
+  @include aparecer;
+  width: 61%;
+  border-radius: $border-radius;
+  border: $border-width solid $primary-color;
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 25px;
+
+  .malaz {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    border-radius: 15%;
+  }
+
+  .texto-recomendado {
+    font-size: 20px;
+    color: $secondary-color;
+  }
+
+  .contenido-libro {
+    flex: 1; /* Para que ocupe el espacio restante en el contenedor */
+    padding: 0 20px;
+  }
+
+  .imagen-libro {
+    flex-basis: 250px; /* Tamaño fijo para la imagen */
+    display: flex;
+    justify-content: flex-end; /* Alineamos la imagen a la derecha */
+    align-items: center; /* Centramos verticalmente la imagen */
+  }
+
+  @include aparecer {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Media Query para dispositivos con un ancho máximo de 739px
+  @media screen and (max-width: 739px) {
+    flex-direction: column;
+    padding: 40px;
+
+    .malaz {
+      width: 150px;
+      height: auto;
+      padding: 5px;
+      border-radius: 10%;
+    }
+
+    .contenido-libro {
+      padding: 10px;
+    }
+
+    .imagen-libro {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}
