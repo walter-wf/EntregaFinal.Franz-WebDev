@@ -1,169 +1,168 @@
-
-
 /* ------------------------------------------------------------------------------Redes Sociales --------------------------------------------------------------------------------------------*/
 .meta {
-    font-size: 14px;
-    color: #999;
-    margin-top: 10px;
-  }
-  
-  .meta span {
-    margin-right: 10px;
-  }
-  
-  .contenedor-redes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .redes-sociales {
-    margin-right: 20px;
-  }
-  
-  .redes-sociales h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .redes-sociales ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .redes-sociales li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .redes-sociales img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .cpyrght {
-    text-align: justify;
-    font-size: 14px;
-    color: #000000;
-  }
-  
-  
-  
-  /* ---------------------------------------------------------------Estilos del botón "Leer más"--------------------------------------------------------------------------------------------- */
-  
-  .boton-leer-mas {
-    display: inline-block;
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .boton-leer-mas:hover {
-    background-color: #0056b3;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
- 
-  
-  
-  /* Estilos para el footer */
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 5px 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.meta span {
+  margin-right: 10px;
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.redes-sociales {
+  margin-right: 20px;
+}
+
+.redes-sociales h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociales li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+
+.cpyrght {
+  text-align: justify;
+  font-size: 14px;
+  color: #000000;
+}
+
+
+
+/* ---------------------------------------------------------------Estilos del botón "Leer más"--------------------------------------------------------------------------------------------- */
+
+.boton-leer-mas {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.boton-leer-mas:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Estilos para el footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex: 0 0 100%;
+  /* Cambiar el tamaño de las columnas para pantallas más pequeñas */
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ffcc00;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  width: 100%;
+  /* Ajustar el ancho del campo de correo electrónico */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffd700;
+}
+
+/* Media queries para adaptar estilos a tablets y celulares */
+@media (max-width: 768px) {
   .col-md-4 {
-    flex: 0 0 100%; /* Cambiar el tamaño de las columnas para pantallas más pequeñas */
+    flex: 0 0 100%;
+    /* Hacer que las columnas ocupen todo el ancho en pantallas más pequeñas */
     max-width: 100%;
-    margin-bottom: 30px;
   }
-  
-  h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  ul li a:hover {
-    color: #ffcc00;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  form {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  input[type="email"] {
-    width: 100%; /* Ajustar el ancho del campo de correo electrónico */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #ffcc00;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ffd700;
-  }
-  
-  /* Media queries para adaptar estilos a tablets y celulares */
-  @media (max-width: 768px) {
-    .col-md-4 {
-      flex: 0 0 100%; /* Hacer que las columnas ocupen todo el ancho en pantallas más pequeñas */
-      max-width: 100%;
-    }
-  }
-  
-  
+}

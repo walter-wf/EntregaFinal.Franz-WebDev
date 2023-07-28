@@ -1,69 +1,69 @@
 /* Estilos para el encabezado */
 header {
-    background:rgb(5, 180, 238);
-    font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    align-items: center;
+  background: rgb(5, 180, 238);
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.9rem;
+}
+
+/* Estilos para el logo */
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Estilos para la lista de navegación */
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+
+.nav li {
+  margin-right: 50px;
+}
+
+
+.social-icon {
+  margin-left: 10px;
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 768px */
+
+@media screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    font-size: 1.9rem;
+    padding: 20px;
   }
-  
-  /* Estilos para el logo */
+
   header img {
-    width: 100px;
-    height: 100px;  
-    border-radius: 50%;
+    margin-bottom: 10px;
+    /* Añade un margen inferior a la imagen en dispositivos más pequeños */
   }
-  
-  /* Estilos para la lista de navegación */
+
   .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav.show {
     display: flex;
-    list-style: none;
   }
-  
-  
+
   .nav li {
-    margin-right: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-
-  .social-icon {
-    margin-left: 10px; 
-  }
-
-
-  /* Media Query para dispositivos con un ancho máximo de 768px */
-  
-  @media screen and (max-width: 320px) {
-    header {
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px;
-    }
-  
-    header img {
-      margin-bottom: 10px; /* Añade un margen inferior a la imagen en dispositivos más pequeños */
-    }
-  
-    .nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background-color: #333; 
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-    }
-  
-    .nav.show {
-      display: flex;
-    }
-  
-    .nav li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
+}
