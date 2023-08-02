@@ -30,19 +30,41 @@
 
 <!---------------------------------------------------------------------------------------- Header -------------------------------------------------------------------------------------------->
 
+
 <header>
-  <img src="./img/logo.jpg" alt="logo">
-  <nav>
-    <ul class="nav">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./pages/blog.html">Blog</a></li>
-      <li><a href="./pages/desafios.html">Desafíos</a></li>
-      <li><a href="./pages/lecturas.html">Lecturas</a></li>
-      <li><a href="./pages/contacto.html">Contacto</a></li>
-      <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-      <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    </ul>
+  <!-- Usa las clases de Bootstrap para el navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.jpg" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/desafios.html">Desafíos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/lecturas.html">Lecturas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
   </nav>
 </header>
 
@@ -73,7 +95,7 @@
 
   <div class="contenedor-aparecer-autor1">
     <div class="contenedor-autor">
-      <img class="imagen1" src="./img/joeaber.jpg" alt="Imagen Joe Abercrombie">
+      <img class="Joe" src="./img/joeaber.jpg" alt="Imagen Joe Abercrombie">
       <section>
         <h1 class="autor-titulo">Autor Del Mes!!</h1>
         <h2 class="titulo">Joe Abercrombie</h2>
@@ -142,10 +164,6 @@
   </footer>
 
   <!-- -----------------------------------------------------Footer--------------------------------------------------------------------------------------------------------- -->
-
-
-
-
 </body>
 
 </html>

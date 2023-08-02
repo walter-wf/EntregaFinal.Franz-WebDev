@@ -1,0 +1,347 @@
+/* -----------------------------------------------------------------------Estilos CSS para Header ---------------------------------------------------------------------------------*/
+
+header {
+  background: rgb(5, 180, 238);
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.9rem;
+}
+
+/* Estilos para el logo */
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Estilos para la lista de navegación */
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin-right: 50px;
+}
+
+.social-icon {
+  margin-left: 10px;
+}
+
+/* Media Query para dispositivos con un ancho máximo de 768px */
+@media screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  header img {
+    margin-bottom: 10px; /* Añade un margen inferior a la imagen en dispositivos más pequeños */
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .nav.show {
+    display: flex;
+  }
+  .nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Estilos para las redes sociales */
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 50%; /* Mueve los elementos hacia la izquierda */
+}
+
+.social-icon {
+  margin-right: 10px; /* Ajusta el margen derecho para separar los iconos */
+  color: #007bff; /* Cambia el color de los iconos */
+  font-size: 24px; /* Ajusta el tamaño de los iconos */
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #0056b3; /* Cambia el color al hacer hover en los iconos */
+}
+
+
+
+
+/* Estilos para los enlaces del menú de navegación */
+.navbar-toggler {
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* -----------------------------------------------------------------------Estilos CSS para bienvenida ---------------------------------------------------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-bienvenida {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-libro-bienvenida {
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* Cambiar a columna en dispositivos móviles */
+  width: 100%;
+  /* El contenedor ocupará todo el ancho disponible en dispositivos más pequeños */
+  max-width: 600px;
+  /* Limita el ancho máximo para mantener legibilidad en pantallas grandes */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* Reduce el padding para dispositivos más pequeños */
+  border-radius: 10px;
+  border: 20px solid #ccc;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+  margin: auto;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+.bienvenido {
+  font-size: 24px;
+  /* Ajustar el tamaño del texto para dispositivos móviles */
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 20px;
+  /* Ajustar el tamaño del texto para dispositivos móviles */
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  /* Cambiar a columna en dispositivos móviles */
+  align-items: center;
+  /* Centrar horizontalmente los botones en dispositivos móviles */
+}
+
+.btn-challenge {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 5px 0;
+  /* Añadir espacio entre los botones en dispositivos móviles */
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.btn-challenge:hover {
+  border-color: #ff0000;
+  color: #000000;
+}
+
+
+
+/* Estilos CSS para Autor */
+.contenedor-autor {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(2, 243, 175) 0%, rgb(184, 212, 228) 0%, rgba(0, 212, 255, 1) 98%);
+  border: 20px solid #ccc;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+  margin: auto;
+}
+
+.autor-titulo {
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28px;
+  color: rgb(42, 62, 62);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.autor-fav {
+  font-size: 14px;
+  color: #0e0d0d;
+  text-align: center;
+}
+
+.Joe {
+  width: 80%;
+  padding: 40px;
+  padding-left: 20%;
+}
+
+.video {
+  margin-left: 20%;
+}
+
+/* Media Query  */
+@media screen and (max-width: 400px) {
+  .contenedor-autor {
+    width: 90%;
+    /* Cambia el ancho del contenedor al 90% del ancho de la pantalla */
+    padding: 10px;
+    /* Reduce el padding para dispositivos más pequeños */
+    margin-top: 10px;
+    /* Ajusta el margen superior para separar del contenido anterior */
+  }
+
+  .autor-titulo {
+    font-size: 24px;
+    /* Reduce el tamaño del texto en dispositivos más pequeños */
+  }
+
+  .autor-fav {
+    font-size: 12px;
+    /* Reduce el tamaño del texto en dispositivos más pequeños */
+  }
+
+  .Joe {
+    width: 100%;
+    /* La imagen ocupará todo el ancho del contenedor en dispositivos más pequeños */
+    padding: 10px;
+    /* Reduce el padding para dispositivos más pequeños */
+    padding-left: 0;
+    /* Ajusta el padding izquierdo a cero */
+  }
+}
+
+
+
+
+/* -------------------------------------------------Estilos CSS para lectura recomendada del mes ------------------------------------------------------------------------------------*/
+
+.contenedor-libro {
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  border: 10px solid #ccc;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+  font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  width: 61%;
+  border-radius: 10px;
+  border: 20px solid #ccc;
+  animation: aparecer 1s forwards;
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+.malaz {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+.texto-recomendado {
+  font-size: 20px;
+  color: rgb(42, 62, 62);
+}
+
+.contenido-libro {
+  flex: 1;
+  /* Para que ocupe el espacio restante en el contenedor */
+  padding: 0 20px;
+}
+
+.imagen-libro {
+  flex-basis: 250px;
+  /* Tamaño fijo para la imagen */
+  display: flex;
+  justify-content: flex-end;
+  /* Alineamos la imagen a la derecha */
+  align-items: center;
+  /* Centramos verticalmente la imagen */
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------------------Estilos CSS Mobile  para lectura recomendada del mes ------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 739px) {
+  .contenedor-libro {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .malaz {
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10%;
+  }
+
+  .contenido-libro {
+    padding: 10px;
+  }
+
+  .imagen-libro {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}

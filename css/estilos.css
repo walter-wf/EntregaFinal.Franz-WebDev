@@ -5,14 +5,12 @@
 
 /* Importar los estilos del encabezado */
 @import "header.css";
-@import "autor.css";
-@import "bienvenida.css";
 @import "blog.css";
 @import "contacto.css";
 @import "desafios.css";
 @import "lecturas.css";
-@import "recomendada.css";
 @import "redesfooter.css";
+@import "home.css";
 
 
 
