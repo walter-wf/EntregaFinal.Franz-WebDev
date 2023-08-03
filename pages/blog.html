@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBook - Blog de Libros: Reseñas, Recomendaciones y Noticias Literarias</title>
   <meta name="description"
-    content="Bienvenido al blog sobre libros, donde encontrarás reseñas, recomendaciones y noticias sobre tus autores favoritos.">
-  <meta name="keywords"
-    content="libros, blog de libros, reseñas de libros, recomendaciones de libros, noticias literarias, autores famosos">
-  <link rel="canonical" href="https://pre-entrega3-franz-34hk-l5swa8wwc-walter-wf.vercel.app/pages/blog.html">
-  <meta property="og:title" content="Blog de Libros">
+    content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
+  <meta name="keywords" content="libros, reseñas, recomendaciones, noticias literarias, lecturas, blog literario">
+
+  <meta property="og:title" content="SmartBook - Blog de Libros">
   <meta property="og:description"
-    content="Bienvenido al blog sobre libros, donde encontrarás reseñas, recomendaciones y noticias sobre tus autores favoritos.">
+    content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
+  <meta property="og:url" content="https://pre-entrega3-franz-34hk-l5swa8wwc-walter-wf.vercel.app/index.html">
+
+  <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/estilos.css">
+
+  <!-- Fuente de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Rubik&display=swap" rel="stylesheet">
+
+  <!-- Iconos de Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Blog de Libros</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="../script.js"></script>
 </head>
 
 
@@ -27,18 +38,41 @@
 <body>
   <!---------------------------------------------------------- Header -------------------------------------------------------------------------------------------->
   <header>
-    <img src="../img/logo.jpg" alt="logo">
-    <nav>
-      <ul class="nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/blog.html">Blog</a></li>
-        <li><a href="../pages/desafios.html">Desafíos</a></li>
-        <li><a href="../pages/lecturas.html">Lecturas</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-        <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-        <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li class="social-icon"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      </ul>
+    <!-- Usa las clases de Bootstrap para el navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <button id="mode-toggle" class="mode-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
+  
+        <img src="../img/logo.jpg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/desafios.html">Desafíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/lecturas.html">Lecturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+  
     </nav>
   </header>
   <!---------------------------------------------------------------------- Header ----------------------------------------------------------------------------->
@@ -49,7 +83,7 @@
     <section class="container">
       <div class="row">
         <!-- Breakpoints 12 Col -->
-        <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="entrada">
             <h2 class="titulo">Leimos "Juego de Tronos"</h2>
             <p class="contenido">Juego de Tronos (título original en inglés: A Game of Thrones) es una novela de
@@ -62,7 +96,7 @@
             <a class="custom-button" href="#">Leer más</a>
           </div>
         </div>
-        <div class="col-lg-1 col-md-2 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="entrada">
             <h2 class="titulo">Leimos "The Witcher"</h2>
             <p class="contenido">Un brujo (Lengua Antigua: vatt'ghern) es un individuo que ha pasado por un extensivo
@@ -75,7 +109,7 @@
             <a class="custom-button" href="#">Leer más</a>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="entrada">
             <h2 class="titulo">Leimos "Obras De Lovecraft"</h2>
             <p class="contenido">Su estilo literario es inconfundible y muy personal. Lo caracteriza el exceso de
@@ -86,7 +120,7 @@
             <a class="custom-button" href="#">Leer más</a>
           </div>
         </div>
-        <div class="col-lg-1 col-md-0 col-sm-12">
+        <div class="col-lg-12 col-md-4 col-sm-12">
           <div class="entrada">
             <h2 class="titulo">Leimos "Mass Effect"</h2>
             <p class="contenido">El juego tiene lugar en el año 2183, donde el jugador asume el papel del Comandante
@@ -123,7 +157,7 @@
           <h3>Soy Lector</h3>
           <p>Elegi tener muchas vidas, no solo una.</p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6">
           <h3>Newsletter</h3>
           <form action="#" method="post">
             <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>

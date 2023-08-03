@@ -1,5 +1,33 @@
-/* -----------------------------------------------------------------------Estilos CSS para Header ---------------------------------------------------------------------------------*/
+body {
+  transition: background-color 0.5s;
+  position: relative;
+}
 
+/* Estilos para el botón de cambio de modo */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Estilos para el modo día */
+.day-mode {
+  background-color: #f0f0f0; /* Color de fondo para el modo día */
+  color: #010101; /* Color de texto para el modo día */
+}
+
+/* Estilos para el modo noche */
+.night-mode {
+  background-color: #333; /* Color de fondo para el modo noche */
+  color: #f0f0f0; /* Color de texto para el modo noche */
+}
+
+/* Estilos para el header */
 header {
   background: rgb(5, 180, 238);
   font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,7 +39,6 @@ header {
 }
 
 /* Estilos para el logo */
-
 header img {
   width: 100px;
   height: 100px;
@@ -32,96 +59,43 @@ header img {
   margin-left: 10px;
 }
 
-/* Media Query para dispositivos con un ancho máximo de 768px */
-@media screen and (max-width: 320px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-  }
-  header img {
-    margin-bottom: 10px; /* Añade un margen inferior a la imagen en dispositivos más pequeños */
-  }
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-  .nav.show {
-    display: flex;
-  }
-  .nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-
 /* Estilos para las redes sociales */
 .social-icons {
   display: flex;
   align-items: center;
-  margin-left: 50%; /* Mueve los elementos hacia la izquierda */
+  margin-left: 50%;
 }
 
 .social-icon {
-  margin-right: 10px; /* Ajusta el margen derecho para separar los iconos */
-  color: #007bff; /* Cambia el color de los iconos */
-  font-size: 24px; /* Ajusta el tamaño de los iconos */
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 24px;
   text-decoration: none;
 }
 
 .social-icon:hover {
-  color: #0056b3; /* Cambia el color al hacer hover en los iconos */
+  color: #0056b3;
 }
 
-
-
-
-/* Estilos para los enlaces del menú de navegación */
-.navbar-toggler {
-  color: white;
-  font-size: 1.2rem;
-}
-
-
-
-
-
-/* -----------------------------------------------------------------------Estilos CSS para bienvenida ---------------------------------------------------------------------------------*/
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+/* Estilos para la sección de bienvenida */
 .contenedor-bienvenida {
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contenedor-libro-bienvenida {
   font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   flex-direction: column;
-  /* Cambiar a columna en dispositivos móviles */
   width: 100%;
-  /* El contenedor ocupará todo el ancho disponible en dispositivos más pequeños */
   max-width: 600px;
-  /* Limita el ancho máximo para mantener legibilidad en pantallas grandes */
   align-items: center;
   justify-content: center;
   padding: 20px;
-  /* Reduce el padding para dispositivos más pequeños */
   border-radius: 10px;
   border: 20px solid #ccc;
   opacity: 0;
@@ -137,7 +111,6 @@ body {
 
 .bienvenido {
   font-size: 24px;
-  /* Ajustar el tamaño del texto para dispositivos móviles */
   color: #333;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -147,7 +120,6 @@ body {
 
 .titulo {
   font-size: 20px;
-  /* Ajustar el tamaño del texto para dispositivos móviles */
   color: #666;
   text-align: center;
   margin-bottom: 20px;
@@ -156,9 +128,7 @@ body {
 .botones {
   display: flex;
   flex-direction: column;
-  /* Cambiar a columna en dispositivos móviles */
   align-items: center;
-  /* Centrar horizontalmente los botones en dispositivos móviles */
 }
 
 .btn-challenge {
@@ -166,7 +136,6 @@ body {
   border: 1px solid #ccc;
   padding: 10px 20px;
   margin: 5px 0;
-  /* Añadir espacio entre los botones en dispositivos móviles */
   transition: border-color 0.3s;
   cursor: pointer;
 }
@@ -176,9 +145,7 @@ body {
   color: #000000;
 }
 
-
-
-/* Estilos CSS para Autor */
+/* Estilos para el autor del mes */
 .contenedor-autor {
   display: flex;
   flex-direction: column;
@@ -218,42 +185,7 @@ body {
   margin-left: 20%;
 }
 
-/* Media Query  */
-@media screen and (max-width: 400px) {
-  .contenedor-autor {
-    width: 90%;
-    /* Cambia el ancho del contenedor al 90% del ancho de la pantalla */
-    padding: 10px;
-    /* Reduce el padding para dispositivos más pequeños */
-    margin-top: 10px;
-    /* Ajusta el margen superior para separar del contenido anterior */
-  }
-
-  .autor-titulo {
-    font-size: 24px;
-    /* Reduce el tamaño del texto en dispositivos más pequeños */
-  }
-
-  .autor-fav {
-    font-size: 12px;
-    /* Reduce el tamaño del texto en dispositivos más pequeños */
-  }
-
-  .Joe {
-    width: 100%;
-    /* La imagen ocupará todo el ancho del contenedor en dispositivos más pequeños */
-    padding: 10px;
-    /* Reduce el padding para dispositivos más pequeños */
-    padding-left: 0;
-    /* Ajusta el padding izquierdo a cero */
-  }
-}
-
-
-
-
-/* -------------------------------------------------Estilos CSS para lectura recomendada del mes ------------------------------------------------------------------------------------*/
-
+/* Estilos para la lectura recomendada del mes */
 .contenedor-libro {
   font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
@@ -274,12 +206,6 @@ body {
   margin-bottom: 25px;
 }
 
-@keyframes aparecer {
-  to {
-    opacity: 1;
-  }
-}
-
 .malaz {
   width: 250px;
   height: auto;
@@ -294,35 +220,17 @@ body {
 
 .contenido-libro {
   flex: 1;
-  /* Para que ocupe el espacio restante en el contenedor */
   padding: 0 20px;
 }
 
 .imagen-libro {
   flex-basis: 250px;
-  /* Tamaño fijo para la imagen */
   display: flex;
   justify-content: flex-end;
-  /* Alineamos la imagen a la derecha */
   align-items: center;
-  /* Centramos verticalmente la imagen */
 }
 
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* -------------------------------------------------Estilos CSS Mobile  para lectura recomendada del mes ------------------------------------------------------------------------------------*/
-
-
+/* Estilos responsive para lectura recomendada del mes */
 @media screen and (max-width: 739px) {
   .contenedor-libro {
     flex-direction: column;

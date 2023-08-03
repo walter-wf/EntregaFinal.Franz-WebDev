@@ -1,9 +1,7 @@
-/* ----------------------------------------------------------------------------Estilos Contacto ----------------------------------------------------------------------------------------------*/
-
 /* Estilos generales  */
 main {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 .contenedor-footer {
@@ -11,7 +9,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Estilos para los cards */
@@ -77,43 +75,31 @@ main {
   border-radius: 5px;
 }
 
-/* Estilos para las redes sociales */
-.redes-sociales h2 {
-  font-size: 12px;
-  margin-bottom: 20px;
-}
-
-.redes-sociales ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.redes-sociales li {
-  margin-right: 10px;
-}
-
-.redes-sociales img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
 /* Media queries para adaptar estilos a tablets y celulares */
 @media (max-width: 768px) {
   .contenedor-footer {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    /* Centrar los cards en pantallas pequeñas */
   }
 
   .card {
-    flex: 1 0 100%;
-    /* Los cards ocuparán todo el ancho en pantallas pequeñas */
+    flex: 1 0 90%;
+    /* Los cards ocuparán el 90% del ancho en pantallas pequeñas */
   }
 
   .mapa iframe {
     height: 200px;
     /* Ajustar el tamaño del mapa para pantallas más pequeñas */
+  }
+
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    /* Los campos de entrada ocuparán todo el ancho disponible */
+  }
+
+  .contacto button {
+    width: 100%;
+    /* El botón de enviar ocupará todo el ancho disponible */
   }
 }

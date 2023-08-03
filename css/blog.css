@@ -1,5 +1,28 @@
-/* -------------------------------------------------------------------------------Estilos blog -----------------------------------------------------------------------------------------------*/
+/* Estilos para el botón de cambio de modo */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
 
+/* Estilos para el modo día */
+.day-mode {
+  background-color: #f0f0f0; /* Color de fondo para el modo día */
+  color: #010101; /* Color de texto para el modo día */
+}
+
+/* Estilos para el modo noche */
+.night-mode {
+  background-color: #333; /* Color de fondo para el modo noche */
+  color: #f0f0f0; /* Color de texto para el modo noche */
+}
+
+/* Estilos blog */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -66,7 +89,7 @@ body {
 }
 
 /* Media queries para adaptar estilos a celulares y tablets */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .container {
     padding: 10px;
     /* Reducir el padding del contenedor para pantallas más pequeñas */
