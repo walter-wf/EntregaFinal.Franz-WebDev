@@ -1,12 +1,12 @@
 {
-  "name": "Entrega Final Desarollo web-franz",
+  "name": "preentrega3-franz",
   "version": "1.0.0",
   "description": "Proyecto: Blog de lectura, opioniones y compra de Libros.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Waltre Franz",
+  "author": "Walter Franz",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
