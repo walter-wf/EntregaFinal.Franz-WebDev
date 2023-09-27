@@ -38,41 +38,42 @@
 <body>
   <!---------------------------------------------------------- Header -------------------------------------------------------------------------------------------->
   <header>
-    <!-- Usa las clases de Bootstrap para el navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
-        <button id="mode-toggle" class="mode-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
-  
-        <img src="../img/logo.jpg" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/desafios.html">Desafíos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/lecturas.html">Lecturas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="social-icons">
-        <a class="social-icon" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="social-icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Centrar el logo -->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="./img/logo.jpg" alt="logo">
+        </a>
+        
+      <!-- Botón Hamburguesa -->
+  <button class="navbar-toggler" type="button" id="hamburger-btn">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <!-- Menú desplegable -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/desafios.html">Desafíos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/lecturas.html">Lecturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mover los íconos de redes sociales hacia la izquierda -->
+        <div class="ml-auto">
+            <a class="social-icon" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </nav>
   </header>
   <!---------------------------------------------------------------------- Header ----------------------------------------------------------------------------->

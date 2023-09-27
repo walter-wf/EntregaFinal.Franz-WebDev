@@ -88,11 +88,10 @@ body {
   background-color: #f7dfa5;
 }
 
-/* Media queries para adaptar estilos a celulares y tablets */
+/* Media query para adaptar estilos a celulares y tablets */
 @media (max-width: 768px) {
   .container {
-    padding: 10px;
-    /* Reducir el padding del contenedor para pantallas más pequeñas */
+    padding: 10px; /* Reducir el padding del contenedor para pantallas más pequeñas */
   }
 
   .col-lg-6,
@@ -100,14 +99,11 @@ body {
   .col-lg-3,
   .col-md-2,
   .col-lg-2 {
-    flex-basis: 100%;
-    /* Hacer que las columnas ocupen todo el ancho en pantallas más pequeñas */
+    flex-basis: 100%; /* Hacer que las columnas ocupen todo el ancho en pantallas más pequeñas */
   }
 
   .custom-button {
-    display: block;
-    /* Mostrar los botones en bloque en pantallas más pequeñas */
-    width: 100%;
-    /* Ajustar el ancho de los botones para ocupar todo el espacio disponible */
+    display: block; /* Mostrar los botones en bloque en pantallas más pequeñas */
+    width: 100%; /* Ajustar el ancho de los botones para ocupar todo el espacio disponible */
   }
 }
