@@ -4,12 +4,15 @@
   "description": "Proyecto: Blog de lectura, opioniones y compra de Libros.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css --watch"
   },
   "author": "Walter Franz",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
-    "parcel": "^2.9.3"
+    "node-sass": "^9.0.0",
+    "parcel": "^2.9.3",
+    "sass": "^1.68.0"
   }
 }
